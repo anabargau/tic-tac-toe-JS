@@ -1,0 +1,120 @@
+@font-face {
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    position: relative;
+    background-color: rgba(243, 236, 236, 0.342);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 50px;
+}
+
+.game {
+    display: flex;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 450px;
+    height: 450px;
+    flex: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.square {
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    font-size: 100px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(250, 167, 14, 0.596);
+}
+
+.player1,
+.player2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+}
+
+#modal {
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+
+.replay {
+    height: 70px;
+    width: 150px;
+    background-color: rgb(231, 226, 226);
+    align-self: center;
+    justify-self: center;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.close-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(231, 226, 226);
+    align-self: flex-end;
+    border: none;
+    font-weight: 600;
+}
+
+.modal-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
