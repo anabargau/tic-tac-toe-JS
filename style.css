@@ -57,6 +57,10 @@ body {
     background-color: rgba(250, 167, 14, 0.596);
 }
 
+.square:hover {
+    filter: brightness(75%);
+}
+
 .player1,
 .player2 {
     flex: 1;
@@ -67,7 +71,7 @@ body {
     font-size: 40px;
 }
 
-#modal {
+#win-modal {
     position: absolute;
     z-index: 1;
     margin-left: auto;
