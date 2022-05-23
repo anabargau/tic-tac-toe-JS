@@ -12,6 +12,13 @@ const gameBoard = (() => {
         modal.remove()
         displayController.refreshBoard()
         displayController.displayScores(player1, player2)
+        if(Game.order == 2 && Game.players == 1) {
+            let idx = Game.makeComputerMove()
+            elements[idx] = 'O'  
+            Game.order--   
+            setTimeout(displayController.refreshBoard, 800)
+            setTimeout(Game.checkIfSomebodyWon, 1000)  
+        }
     }
 
     const getElements = () => elements
