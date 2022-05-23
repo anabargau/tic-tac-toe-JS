@@ -105,6 +105,14 @@ body {
     font-size: 16px;
 }
 
+.modal-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
 .close-btn {
     height: 40px;
     width: 40px;
@@ -115,10 +123,3 @@ body {
     font-weight: 600;
 }
 
-.modal-text {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 45px;
-}
